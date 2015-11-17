@@ -1,0 +1,3 @@
+}),
+widget.require('test/index')
+//

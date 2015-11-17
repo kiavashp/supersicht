@@ -1,0 +1,10 @@
+var server = require(__dirname +'/lib/server');
+var widget = {
+    command: '',
+    refreshFrequency: false,
+    render: function () {
+    	return '<iframe frameless style="border:none" src="http://localhost:6421"></iframe>';
+    }
+};
+
+module.exports = widget;

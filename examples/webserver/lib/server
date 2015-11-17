@@ -1,0 +1,13 @@
+var PORT = 6421;
+var http = require('http');
+var server;
+
+server = http.createServer(function (req, res) {
+    res.end('success');
+});
+
+server.listen(PORT, function () {
+    console.log(':'+ PORT);
+});
+
+module.exports = server;
