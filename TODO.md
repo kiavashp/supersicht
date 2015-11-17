@@ -23,8 +23,11 @@
 }//
 ```
 
-- parse html for `(src|href)="widget:/static/path"`
-	- replaces with `$1="http://localhost:[port]/[widget_dir]/static/path"`
+- auto insert host for static file links in html
+	- replace `supersicht-(src|href)="/static/path"` with `$1="[host]/[widget_dir]/static/path"`
+		- can be run on DOM after `afterRender()` and `update` methods
+	- replace `(src|href)="widget:/static/path"` with `$1="[host]/[widget_dir]/static/path"`
+		- implemented in render wrapper with string parsing
 	- needs widget dirname
 	- can only do when loaded through `supersicht`
 
