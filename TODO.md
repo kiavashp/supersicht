@@ -1,5 +1,4 @@
 - support `widgets/*/widget.json`
-	- example: 
 ```
 {
 	name: 'widget_name',
