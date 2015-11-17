@@ -1,0 +1,10 @@
+{
+    command: "echo",
+    refreshFrequency: false,
+    render: function (){ return '' },
+    afterRender: function (element){
+        var parent = element.parentNode;
+        parent.parentNode.removeChild(parent);
+    },
+    style: "display:none"
+}
