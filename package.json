@@ -1,0 +1,6 @@
+{
+	"name": "supersicht",
+	"scripts": {
+		"dist": "git archive --format=zip --output _supersicht.zip HEAD"
+	}
+}
