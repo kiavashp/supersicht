@@ -12,10 +12,14 @@
         refreshFrequency: false,
         style: 'display:none',
         render: function () {
-            var _this;
+            var _this = this;
             return _this.error || '';
         },
         afterRender: function (element){
+            var _this = this;
+            if (_this.error) {
+                return;
+            }
             var parent = element.parentNode;
             parent.parentNode.removeChild(parent);
         }
