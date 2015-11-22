@@ -29,7 +29,6 @@
         WIDGETS_DIR = path.resolve(path.dirname(filePath), '../');
         DEFAULT_WIDGET = readFile(DIRNAME +'/lib/default-widget');
 
-        sdfsdf
     } catch (e) {
 
         if (DEBUG) {
